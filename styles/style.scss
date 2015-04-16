@@ -1,0 +1,243 @@
+/************************
+*		COLORS			*
+************************/
+
+$white: rgba(255,255,255,1);
+$red: hsl(1, 68%, 59%);
+$darkred: desaturate(darken($red, 18%), 15%);
+$verydarkred: desaturate(darken($red, 25%), 15%);
+$lightred: lighten($red, 18%);
+
+/************************
+*		CLEARFIX		*
+************************/
+@mixin clearfix	{
+	&:after {
+	  content: "";
+	  display: block;
+	  clear: both;
+	  visibility: hidden;
+	  line-height: 0;
+	  height: 0;
+	}
+}
+
+/************************
+*		SETUP			*
+************************/
+
+html {
+	font-size: 80px;
+} 
+
+body 	{
+	font-family: "Atlas Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: $white;
+	background-color: #000000;
+	font-weight: 300;
+	font-size: 1rem;
+	line-height: 1.3em;
+	text-align: left;
+	text-rendering: optimizeLegibility;
+	font-variant-ligatures: inherit;
+	overflow-x: hidden;
+	word-wrap: normal;
+}
+
+main	{
+	width: 1920px;
+	height: 1080px;
+	overflow: hidden;
+}
+
+article	{
+	width: 1920px;
+	height: 1080px;
+	background-color: $red;
+	position: relative;
+}
+
+article	{
+	header	{
+		position: absolute;
+		top: 1rem;
+		left: 2rem;
+	}
+	
+	section	{
+		position: absolute;
+		bottom: 2rem;
+		left: 2rem;
+		width: 70%;
+		max-height: 700px;
+	}
+}
+
+.progress	{
+	width: 1920px;
+	height: 15px;
+	position: fixed;
+	top: 1080px - 15px;
+	overflow: hidden;
+	
+	background-color: $darkred;
+	
+	.bar	{
+		height: 100%;
+		width: 0;
+		background-color: $verydarkred;
+		transition: width 1s;
+	}
+}
+
+/************************
+*		TYPOGRAPHY		*
+************************/
+
+header	{
+	font-size: .5rem;
+	font-weight: 500;
+}
+
+strong	{
+		font-weight: 500;
+}
+
+mark	{
+	font-weight: 500;
+	background-color: transparent;
+	color: inherit;
+	font-style: inherit;
+}
+
+.light	{
+	font-weight: 300;
+}
+
+.small	{
+	font-size: .6rem;
+}
+
+.bright	{
+	color: $lightred;
+}
+
+h1	{
+	font-weight: 500;
+	font-size: 1.4rem;
+	line-height: 1.25em;
+	//margin-bottom: .3rem;
+}
+
+h1:last-child	{
+	margin-bottom: 0;
+}
+
+ul	{
+	list-style: none;
+	
+	li {
+		margin-bottom: .5rem;
+		
+		&:last-child	{
+			margin-bottom: 0;
+		}
+	}
+	
+	li:before	{
+		content: "›";
+		padding-right: .2rem;
+		margin-left: -.5rem;
+		color: $lightred;
+	}
+}
+
+p	{
+	margin: 0;
+}
+
+blockquote	{
+	font-size: .8rem;
+	line-height: 1.3em;
+	overflow: visible;
+	
+	&:before	{
+		content: "»";
+		margin-right: -.1rem;
+		margin-left: -.55rem;
+	}
+	
+	&:after	{
+		content: "«";
+		display: inline;
+		margin-left: -.1rem;
+	}
+}
+
+cite	{
+	font-size: .4rem;
+}
+
+/************************
+*		CODE			*
+************************/
+
+.tag	{
+	font-family: "Fira Mono", monospace;
+	font-size: 0.85em;	
+	color: $white;
+	background-color: $darkred;
+	border-radius: 10px;
+	padding: 0 5px;
+	margin: 0 15px;
+	
+	&:first-child	{
+		margin-left: 0;
+	}
+}
+
+header .tag	{
+	margin: 0;
+}
+
+.code-snippet	{
+	@include clearfix;
+	
+	font-family: "Fira Mono", monospace;
+	font-size: 0.5rem;	
+	line-height: 1.5em;
+	color: $white;
+	background-color: $darkred;
+	border-radius: 10px;
+	max-height: 650px;
+	width: 1920px - 80px * 4;
+	overflow-y: auto;
+	margin-bottom: .7rem;
+	
+	&:last-child	{
+		margin-bottom: 0;
+	}
+	
+	.lines	{
+		float: left;
+		width: 1rem;
+		text-align: right;
+		background-color: $verydarkred;
+		color: $red;
+		border-radius: 10px 0 0 10px;
+		padding: 10px;
+		//min-height: 650px;
+	}
+	
+	pre	{
+		overflow-x: auto;	
+		padding: 10px 20px;
+		min-height: 100%;
+		tab-size: 3;	
+		font-family: "Fira Mono", monospace;
+	}
+	
+	&.small	{
+		font-size: .35rem;
+	}
+}
