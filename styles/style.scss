@@ -31,11 +31,12 @@ html {
 } 
 
 body 	{
-	font-family: "Atlas Grotesk", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Flama", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: $white;
 	background-color: #000000;
-	font-weight: 300;
+	font-weight: 200;
 	font-size: 1rem;
+	letter-spacing: .01em;
 	line-height: 1.3em;
 	text-align: left;
 	text-rendering: optimizeLegibility;
@@ -111,7 +112,7 @@ mark	{
 }
 
 .light	{
-	font-weight: 300;
+	font-weight: 200;
 }
 
 .small	{
@@ -178,18 +179,26 @@ cite	{
 	font-size: .4rem;
 }
 
+img	{
+	display: block;
+	max-height: 700px;
+	background-color: $white;
+	padding: 10px;
+}
+
 /************************
 *		CODE			*
 ************************/
 
 .tag	{
-	font-family: "Fira Mono", monospace;
+	font-family: "Input Mono", monospace;
 	font-size: 0.85em;	
 	color: $white;
 	background-color: $darkred;
 	border-radius: 10px;
 	padding: 0 5px;
 	margin: 0 15px;
+	font-weight: 400;
 	
 	&:first-child	{
 		margin-left: 0;
@@ -203,8 +212,8 @@ header .tag	{
 .code-snippet	{
 	@include clearfix;
 	
-	font-family: "Fira Mono", monospace;
-	font-size: 0.5rem;	
+	font-family: "Input Mono", monospace;
+	font-size: 0.6rem;	
 	line-height: 1.5em;
 	color: $white;
 	background-color: $darkred;
@@ -213,6 +222,8 @@ header .tag	{
 	width: 1920px - 80px * 4;
 	overflow-y: auto;
 	margin-bottom: .7rem;
+	font-weight: 400;
+
 	
 	&:last-child	{
 		margin-bottom: 0;
@@ -238,6 +249,6 @@ header .tag	{
 	}
 	
 	&.small	{
-		font-size: .35rem;
+		font-size: .4rem;
 	}
 }

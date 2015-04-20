@@ -7,7 +7,8 @@ $(document).ready(function(){
 		slides++;
 	});
 	
-	console.log(slides);
+	currentSlide = slides - 2;
+	changeSlide();
 	
 	function changeSlide()	{
 		$("article").css("transform", "translateY(" + -currentSlide * 1080 + "px)");	

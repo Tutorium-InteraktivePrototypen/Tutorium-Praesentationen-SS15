@@ -1,0 +1,808 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+
+		<!-------------------------<!--! META ------------------------------>
+		<title>Einheit 2 – Interaktive Prototypen mit HTML, CSS & JS</title>
+		<link rel="icon" href="imgs/sprites/favicon.ico" type="image/png" />
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+
+		<!-------------------------<!--! STYLES ------------------------------>
+		<link rel="stylesheet" type="text/css" href="../styles/reset.css">
+		<link rel="stylesheet" type="text/css" href="../styles/style.css">
+
+		<!-------------------------<!--! LIBARIES ------------------------------>
+		<script type="text/javascript" src="../scripts/libaries/jquery.js"></script>
+
+		<!-------------------------<!--! SCRIPTS ------------------------------>
+		<script type="text/javascript" src="../scripts/scripts.js"></script>
+		<script type="text/javascript" src="../scripts/linenumbers.js"></script>
+		
+	</head>
+
+	<body>
+		
+		<main>
+			
+			<article>
+				<header>
+					Tutorium <span class="light">– Einheit 2 – 22.04.15</span>
+				</header>
+				
+				<section>
+					<h1>Interaktive Prototypen<br>
+						<span class="light">mit HTML, CSS & JS</span>
+					</h1>
+				</section>
+			</article>
+			
+			<article>
+				<header>
+					Einheit 2 <span class="light">– Übersicht</span>
+				</header>
+				
+				<section>
+					<ul>
+						<li>Wiederholung <span class="light">– Einheit 1</span></li>
+						<li>Bilder</li>
+						<li>Strukturtags</li>
+					</ul>
+				</section>
+			</article>
+			
+			<article>
+				<header>
+					<span class="light">Wiederholung:</span> Einführung HTML
+				</header>
+				
+				<section>
+					<h1><span class="tag">&lt;tag&gt;</span>Inhalt<span class="tag">&lt;/tag&gt;</span></h1>
+				</section>
+			</article>			
+			
+				<article>
+					<header>
+						<span class="light">Wiederholung:</span> Begriffe
+					</header>
+					
+					<section>
+						<h1 style="font-size: 1rem"><span class="tag">&lt;tag attribut=&quot;wert&quot;&gt;</span>…<span class="tag">&lt;/tag&gt;</span></h1>
+					</section>
+				</article>	
+				
+				<article>
+					<header>
+						<span class="light">Wiederholung:</span> Grundaufbau eines HTML-Dokuments
+					</header>
+					
+					<section>
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Grundaufbau eines HTML-Dokuments&lt;/title&gt;
+	&lt;/head&gt;
+
+	&lt;body&gt;
+		Hier steht der Inhalt der Seite.
+	&lt;/body&gt;
+&lt;/html&gt;</pre>
+</code>
+</div>
+					</section>
+				</article>	
+				
+				<article>
+					<header>
+						<span class="light">Wiederholung:</span> Texte & Typografie
+					</header>
+					
+					<section>
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>&lt;h1&gt;&Uuml;berschrift ersten Grades&lt;/h1&gt;
+&lt;h2&gt;&Uuml;berschrift zweiten Grades&lt;/h2&gt;
+&lt;h3&gt;&Uuml;berschrift dritten Grades&lt;/h3&gt;
+&lt;h4&gt;&Uuml;berschrift vierten Grades&lt;/h4&gt;
+&lt;h5&gt;&Uuml;berschrift f&uuml;nften Grades&lt;/h5&gt;
+&lt;h6&gt;&Uuml;berschrift sechsten Grades&lt;/h6&gt;</pre>
+</code>
+</div>
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						<span class="light">Wiederholung:</span> Texte & Typografie
+					</header>
+					
+					<section>
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>&lt;p&gt;Ein Absatz eines l&auml;ngeren Textes&lt;/p&gt;
+&lt;p&gt;Ein weiterer Absatz. Zwischen den beiden wird es einen Abstand geben.&lt;/p&gt;</pre>
+</code>
+</div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>Ein Zeilenumbruch erreicht man durch ein einfaches Tag.&lt;br&gt;
+Es besitzt kein schlie&szlig;endes Pendant.</pre>
+</code>
+</div>
+
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						<span class="light">Wiederholung:</span> Texte & Typografie
+					</header>
+					
+					<section>
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>&lt;em&gt;Betont&lt;/em&gt;</pre></code></div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>&lt;strong&gt;Hervorgehoben&lt;/strong&gt;</pre></code></div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>&lt;mark&gt;Relevant&lt;/mark&gt;</pre>
+</code>
+</div>
+					</section>
+				</article>
+
+				<article>
+					<header>
+						Bilder
+					</header>
+					
+					<section>
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>&lt;img src=&quot;img/image.jpg&quot;&gt;</pre>
+</code>
+</div>
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						Strukturierung
+					</header>
+					
+					<section>
+						<img src="imgs/aufteilung_01.png">
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						Strukturierung
+					</header>
+					
+					<section>
+						<img src="imgs/aufteilung_02.png">
+					</section>
+				</article>
+
+				<article>
+					<header>
+						Strukturierung
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>&lt;main&gt;Hauptinhalt der Seite&lt;/main&gt;
+&lt;nav&gt;Hauptnavigation&lt;/nav&gt;</pre>
+</code>
+</div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>&lt;header&gt;Kopfelement einer Seite oder eines Abschnitts (z.B. eines Blog-Posts)&lt;/header&gt;
+&lt;footer&gt;Fußelement eines Seite oder eines Abschnitts&lt;/footer&gt;</pre>
+</code>
+</div>
+					</section>
+				</article>	
+
+				<article>
+					<header>
+						Strukturierung
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>&lt;article&gt;Eine größere Einheit von Inhalt (z.B. ein Blog-Post oder ein Kapitel)&lt;/article&gt;
+&lt;section&gt;Logische Einheit/Abschnitt eines größeren Inhalts&lt;/section&gt;</pre>
+</code>
+</div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>&lt;aside&gt;Untergeordneter Inhalt&lt;/aside&gt;</pre>
+</code>
+</div>
+					</section>
+				</article>	
+				
+				<article>
+					<header>
+						Strukturierung
+					</header>
+					
+					<section>
+
+<div class="code-snippet small">
+<div class="lines"></div>
+<code>
+<pre>&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;&Uuml;bung 2&lt;/title&gt;		
+		&lt;meta charset=&quot;utf-8&quot;&gt;
+	&lt;/head&gt;
+	
+	&lt;body&gt;
+		
+		&lt;header&gt;
+			&lt;p&gt;HTML 5.1 Nightly &ndash; A vocabulary and associated APIs for HTML and XHTML &ndash; Editor's Draft 21 October 2014&lt;/p&gt;
+		&lt;/header&gt;
+		
+		&lt;nav&gt;
+			&lt;p&gt;&lt;a href=&quot;#&quot;&gt;&lsaquo; 2 Common infrastructure&lt;/a&gt; &ndash; &lt;a href=&quot;#&quot;&gt;Table of contents&lt;/a&gt; &ndash; &lt;a href=&quot;#&quot;&gt;4 The elements of HTML &rsaquo;&lt;/a&gt;&lt;/p&gt;
+		&lt;/nav&gt;
+		
+		&lt;main&gt;
+			
+			&lt;article&gt;
+				
+				&lt;h1&gt;3 Semantics, structure, and APIs of HTML documents&lt;/h1&gt;
+				
+				&lt;section&gt;
+					&lt;h2&gt;3.2 Elements&lt;/h2&gt;
+					
+					&lt;h3&gt;3.2.1 Semantics&lt;/h3&gt;
+			
+					&lt;p&gt;&lt;i&gt;This section is non-normative.&lt;/i&gt;&lt;/p&gt;
+			
+					&lt;p&gt;Elements, attributes, and attribute values in &lt;b&gt;HTML&lt;/b&gt; are defined (by this specification) to have certain meanings (semantics). For example, the ol element represents an ordered list, and the lang attribute represents the language of the content.&lt;/p&gt;
+			
+					&lt;p&gt;These definitions allow &lt;b&gt;HTML&lt;/b&gt; processors, such as Web browsers or search engines, to present and use documents and applications in a wide variety of contexts that the author might not have considered.&lt;/p&gt;
+		
+					&lt;h3&gt;3.2.3 Element definitions&lt;/h3&gt;
+					
+					&lt;p&gt;Each element in this specification &lt;em&gt;has&lt;/em&gt; to have a definition that includes the following information:&lt;/p&gt;
+					
+					&lt;ul&gt;
+						&lt;li&gt;Categories&lt;/li&gt;
+						&lt;li&gt;Contexts in which this element can be used&lt;/li&gt;
+						&lt;li&gt;Content model&lt;/li&gt;
+						&lt;li&gt;Tag omission in text/html&lt;/li&gt;
+						&lt;li&gt;Content attributes&lt;/li&gt;
+					&lt;/ul&gt;
+			
+					&lt;p&gt;&lt;strong&gt;Warning: Otherwise it is not valid!&lt;/strong&gt;&lt;/p&gt;
+				&lt;/section&gt;
+				
+				&lt;section&gt;
+					&lt;h2&gt;3.3 Content models&lt;/h2&gt;
+					
+					&lt;p&gt;Each element defined in this specification has a content model: a description of the element's expected contents. An HTML element must have contents that match the requirements described in the element's content model. The contents of an element are its children in the DOM, except for template elements, where the children are those in the template contents (a separate DocumentFragment assigned to the element when the element is created).&lt;/p&gt;
+				&lt;/section&gt;
+				
+			&lt;/article&gt;
+		
+		&lt;/main&gt;
+
+		&lt;footer&gt;
+			&lt;p&gt;Created &lt;time datetime=&quot;2014-10-21 09:00&quot;&gt;21 October 2014 15:52&lt;/time&gt;&lt;/p&gt;
+			
+			&lt;adress&gt;
+				&lt;p&gt;&lt;a href=&quot;mailto:info@w3c.org&quot;&gt;info@w3c.org&lt;/a&gt;&lt;/p&gt;
+			&lt;/adress&gt;
+		&lt;/footer&gt;
+		
+	&lt;/body&gt;
+&lt;/html&gt;</pre>
+</code>
+</div>
+					</section>
+				</article>	
+				
+				<article>
+					<header>
+						Strukturierung
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>&lt;div&gt;Ein unsemantisches Block-Tag&lt;/div&gt;</pre>
+</code>
+</div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>&lt;span&gt;Ein unsemantisches Inline-Tag&lt;/span&gt;</pre>
+</code>
+</div>
+					</section>
+				</article>	
+				
+				<article>
+					<header>
+						Einführung CSS
+					</header>
+					
+					<section>
+						<h1>Cascading Style Sheets</h1>
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						Grundaufbau einer CSS-Datei
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>Selektor	{
+	Eigenschaft: Wert;
+	Eigenschaft: Wert;
+}</pre>
+</code>
+</div>
+
+					</section>
+				</article>
+
+				<article>
+					<header>
+						Grundaufbau einer CSS-Datei
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>h1	{
+	font-size: 20px;
+	line-height: 26px;
+}</pre>
+</code>
+</div>
+					</section>
+				</article>	
+				
+				<article>
+					<header>
+						Kommentare
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>h1	{
+	font-size: 20px;
+	/* line-height: 26px; */
+}</pre>
+</code>
+</div>
+					</section>
+				</article>	
+				
+				<article>
+					<header>
+						Einbindung von CSS-Dateien <span class="light">– Inline</span>
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>&lt;style&gt;
+	Selektor	{
+		Eigenschaft: Wert;
+		Eigenschaft: Wert;
+	}
+&lt;/style&gt;</pre>
+</code>
+</div>
+					</section>
+				</article>	
+				
+				<article>
+					<header>
+						Einbindung von CSS-Dateien <span class="light">– Extern</span>
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;styles/style.css&quot;&gt;</pre>
+
+</code>
+</div>
+					</section>
+				</article>	
+				
+				
+				<article>
+					<header>
+						Best practice <span class="light">– Ordnung und Ordnerstruktur</span>
+					</header>
+					
+					<section>
+
+<div class="code-snippet small">
+<div class="lines"></div>
+<code>
+<pre><b>/attic</b>				Nicht mehr benötigte Dateien
+<b>/backups</b>				Regelmäßige Backups
+<b>/data</b> 				Größere Dateien, z.B. Sounds
+<b>/imgs</b>					Grafiken
+	<b>/assets</b> 			UI-Grafiken
+<b>/scripts</b>				JS-Dateien	
+	<b>/libraries</b>		JS-Libraries
+<b>/styles</b>				CSS-Dateien
+
+HTML-Dateien</pre>
+
+</code>
+</div>
+					</section>
+				</article>	
+				
+				<article>
+					<header>
+						Typografie
+					</header>
+					
+					<section>
+
+<div class="code-snippet small">
+<div class="lines"></div>
+<code>
+<pre>body	{
+	font-family: "Fira Sans", Helvetica, Arial, sans-serif;	
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: normal; 	/* (thin, bold, 300, 400, 500) */
+	font-style: regular;	/* (italic, oblique) */
+	text-align: left;		/* (center, right) */
+	text-decoration: none;	/* (overline, line-through, underline) */
+	color: black;
+}</pre>
+
+</code>
+</div>
+					</section>
+				</article>	
+				
+				<article>
+					<header>
+						Farbangaben
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>color: #FF0000;</pre>
+</code>
+</div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>color: rgb(255,0,0);</pre>
+</code>
+</div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>color: rgba(255,0,0,.5);</pre>
+</code>
+</div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>color: hsla(320, 80%, 20%, .4);</pre>
+</code>
+</div>
+					</section>
+				</article>	
+				
+				<article>
+					<header>
+						Größenangaben
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	font-size: 20px;
+}</pre>
+</code>
+</div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	width: 50%;
+}</pre>
+</code>
+</div>					</section>
+				</article>	
+				
+				<article>
+					<header>
+						Größenangaben
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	font-size: 20px;
+	width: 5em;
+	margin: 0.5em;
+}</pre>
+</code>
+</div>
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						Größenangaben
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>html	{
+	font-size: 15px;
+}	
+
+div	{
+	font-size 20px;
+	width: 5rem;
+	padding: 1rem;
+}</pre>
+</code>
+</div>					</section>
+				</article>
+				
+				<article>
+					<header>
+						Größenangaben
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	height: 100%;
+	width: auto;
+}</pre>
+</code>
+</div>					</section>
+				</article>
+				
+				<article>
+					<header>
+						Beispiel CSS-Code
+					</header>
+					
+					<section>
+
+<div class="code-snippet small">
+<div class="lines"></div>
+<code>
+<pre>body	{
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	line-height: 22px;
+}
+
+header	{
+	color: rgba(0,255,0,1);
+}
+
+nav	{
+	font-weight: bold;
+}
+
+article	{
+	color: rgba(255,0,0,1);
+}
+
+h1	{
+	font-size: 60px;
+	line-height: 60px;
+}
+
+h1, h2, h3	{
+	text-align: center;
+}
+
+ul	{
+	text-decoration: underline;
+}
+
+footer	{
+	background-color: rgba(0,255,0,1)
+}</pre>
+</code>
+</div>					</section>
+				</article>
+				
+				<article>
+					<header>
+						Einfache Selektoren
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>h1</pre>
+</code>
+</div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>h1, h2, h3</pre>
+</code>
+</div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>article h1</pre>
+</code>
+</div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>.code-snippet-container</pre>
+</code>
+</div>
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						Einfache Selektoren
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>h1 .title</pre>
+</code>
+</div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>h1.title</pre>
+</code>
+</div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>article h1.title</pre>
+</code>
+</div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>h1.title, h2.title</pre>
+</code>
+</div>
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						Klassen
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>&lt;article class=&quot;slide&quot;&gt;Inhalt&lt;/article&gt;</pre>
+</code>
+</div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>&lt;span class=&quot;tag light &quot;&gt;Inhalt&lt;/span&gt;</pre>
+</code>
+</div>
+					</section>
+				</article>
+
+
+
+				
+				<article>
+					<header>
+						Nächste Sitzung
+					</header>
+					
+					<section>
+						<h1>Einheit 3 <span class="light">– 29.04.15</span></h1>
+					</section>
+				</article>
+				
+			<div class="progress">
+				<div class="bar"></div>
+			</div>
+		</main>
+		
+	</body>
+</html>
