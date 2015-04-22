@@ -7,7 +7,7 @@ $(document).ready(function(){
 		slides++;
 	});
 	
-	currentSlide = slides - 2;
+	//currentSlide = slides - 2;
 	changeSlide();
 	
 	function changeSlide()	{
