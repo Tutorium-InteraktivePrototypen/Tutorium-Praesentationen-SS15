@@ -1,0 +1,1081 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+
+		<!-------------------------<!--! META ------------------------------>
+		<title>Einheit 3 – Interaktive Prototypen mit HTML, CSS & JS</title>
+		<link rel="icon" href="imgs/sprites/favicon.ico" type="image/png" />
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+
+		<!-------------------------<!--! STYLES ------------------------------>
+		<link rel="stylesheet" type="text/css" href="../styles/reset.css">
+		<link rel="stylesheet" type="text/css" href="../styles/style.css">
+
+		<!-------------------------<!--! LIBARIES ------------------------------>
+		<script type="text/javascript" src="../scripts/libaries/jquery.js"></script>
+
+		<!-------------------------<!--! SCRIPTS ------------------------------>
+		<script type="text/javascript" src="../scripts/scripts.js"></script>
+		<script type="text/javascript" src="../scripts/linenumbers.js"></script>
+		
+	</head>
+
+	<body>
+		
+		<main>
+			
+			<article>
+				<header>
+					Tutorium <span class="light">– Einheit 3 – 06.06.15</span>
+				</header>
+				
+				<section>
+					<h1>Interaktive Prototypen<br>
+						<span class="light">mit HTML, CSS & JS</span>
+					</h1>
+				</section>
+			</article>
+			
+				<article>
+					<header>
+						<span class="light">Wiederholung:</span> Strukturierung
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>&lt;main&gt;Hauptinhalt der Seite&lt;/main&gt;
+&lt;nav&gt;Hauptnavigation&lt;/nav&gt;</pre>
+</code>
+</div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>&lt;header&gt;Kopfelement einer Seite oder eines Abschnitts (z.B. eines Blog-Posts)&lt;/header&gt;
+&lt;footer&gt;Fußelement eines Seite oder eines Abschnitts&lt;/footer&gt;</pre>
+</code>
+</div>
+					</section>
+				</article>	
+
+				<article>
+					<header>
+						<span class="light">Wiederholung:</span> Strukturierung
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>&lt;article&gt;Eine größere Einheit von Inhalt (z.B. ein Blog-Post oder ein Kapitel)&lt;/article&gt;
+&lt;section&gt;Logische Einheit/Abschnitt eines größeren Inhalts&lt;/section&gt;</pre>
+</code>
+</div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>&lt;aside&gt;Untergeordneter Inhalt&lt;/aside&gt;</pre>
+</code>
+</div>
+					</section>
+				</article>		
+			
+				<article>
+					<header>
+						<span class="light">Wiederholung:</span> Strukturierung
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>&lt;div&gt;Ein unsemantisches Block-Tag&lt;/div&gt;</pre>
+</code>
+</div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>&lt;span&gt;Ein unsemantisches Inline-Tag&lt;/span&gt;</pre>
+</code>
+</div>
+					</section>
+				</article>	
+				
+				<article>
+					<header>
+						<span class="light">Wiederholung:</span> Grundaufbau einer CSS-Datei
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>Selektor	{
+	Eigenschaft: Wert;
+	Eigenschaft: Wert;
+}</pre>
+</code>
+</div>
+
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						<span class="light">Wiederholung:</span> Einbindung von CSS-Dateien <span class="light">– Extern</span>
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;styles/style.css&quot;&gt;</pre>
+
+</code>
+</div>
+					</section>
+				</article>	
+								
+				<article>
+					<header>
+						<span class="light">Wiederholung:</span> Typografie
+					</header>
+					
+					<section>
+
+<div class="code-snippet small">
+<div class="lines"></div>
+<code>
+<pre>body	{
+	font-family: "Fira Sans", Helvetica, Arial, sans-serif;	
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: normal; 	/* (thin, bold, 300, 400, 500) */
+	font-style: regular;	/* (italic, oblique) */
+	text-align: left;		/* (center, right) */
+	text-decoration: none;	/* (overline, line-through, underline) */
+	color: black;
+}</pre>
+
+</code>
+</div>
+					</section>
+				</article>	
+				
+				<article>
+					<header>
+						<span class="light">Wiederholung:</span> Farbangaben
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>color: #FF0000;</pre>
+</code>
+</div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>color: rgb(255,0,0);</pre>
+</code>
+</div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>color: rgba(255,0,0,.5);</pre>
+</code>
+</div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>color: hsla(320, 80%, 20%, .4);</pre>
+</code>
+</div>
+					</section>
+				</article>	
+				
+				<article>
+					<header>
+						<span class="light">Wiederholung:</span> Größenangaben
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	font-size: 20px;
+}</pre>
+</code>
+</div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	width: 50%;
+}</pre>
+</code>
+</div>					</section>
+				</article>	
+				
+				<article>
+					<header>
+						<span class="light">Wiederholung:</span> Größenangaben
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	font-size: 20px;
+	width: 5em;
+	margin: 0.5em;
+}</pre>
+</code>
+</div>
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						<span class="light">Wiederholung:</span> Größenangaben
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>html	{
+	font-size: 15px;
+}	
+
+div	{
+	font-size 20px;
+	width: 5rem;
+	padding: 1rem;
+}</pre>
+</code>
+</div>					</section>
+				</article>
+				
+				<article>
+					<header>
+						<span class="light">Wiederholung:</span> Größenangaben
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	height: 100%;
+	width: auto;
+}</pre>
+</code>
+</div>					</section>
+				</article>
+								
+				<article>
+					<header>
+						<span class="light">Wiederholung:</span> Einfache Selektoren
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>h1</pre>
+</code>
+</div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>h1, h2, h3</pre>
+</code>
+</div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>article h1</pre>
+</code>
+</div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>.code-snippet-container</pre>
+</code>
+</div>
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						<span class="light">Wiederholung:</span> Klassen
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>h1 .title</pre>
+</code>
+</div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>h1.title</pre>
+</code>
+</div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>article h1.title</pre>
+</code>
+</div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>h1.title, h2.title</pre>
+</code>
+</div>
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						<span class="light">Wiederholung:</span> Klassen
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>&lt;article class=&quot;slide&quot;&gt;Inhalt&lt;/article&gt;</pre>
+</code>
+</div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>&lt;span class=&quot;tag light&quot;&gt;Inhalt&lt;/span&gt;</pre>
+</code>
+</div>
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						<span class="light">Wiederholung:</span> Das Box-Modell
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	height: 400px;
+	width: 500px;
+	margin: 50px;
+	padding: 80px;
+	border: 10px solid black;
+}</pre>
+</code>
+</div>					</section>
+				</article>
+				
+				<article>
+					<header>
+						<span class="light">Wiederholung:</span> Das Box-Modell <span class="light">– Border-Box</span>
+					</header>
+					
+					<section>
+						<img src="imgs/box-modell_4.png">
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						<span class="light">Wiederholung:</span> Das Box-Modell <span class="light">– Einzelne Werte</span>
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	height: 400px;
+	width: 500px;
+	
+	margin-top: 50px;
+	margin-left: 100px;
+	margin-bottom: 75px;
+	
+	padding-top: 80px;
+	
+	border: 10px solid black;
+}</pre>
+</code>
+</div>					</section>
+				</article>
+								
+				<article>
+					<header>
+						<span class="light">Wiederholung:</span> <span class="tag">overflow</span>
+					</header>
+					
+					<section>
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	height: 400px;
+	width: 500px;
+	
+	overflow: hidden;
+}</pre>
+</code>
+</div>
+					</section>
+				</article>
+
+				<article>
+					<header>
+						<span class="light">Wiederholung:</span> <span class="tag">overflow</span>
+					</header>
+					
+					<section>
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	overflow-x: hidden;
+	overflow-y: scroll;
+}</pre>
+</code>
+</div>
+					</section>
+				</article>
+							
+				<article>
+					<header>
+						<span class="light">Wiederholung:</span> <span class="tag">overflow</span>
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	overflow-y: auto;
+}</pre>
+</code>
+</div>
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						Einheit 3 <span class="light">– Übersicht</span>
+					</header>
+					
+					<section>
+						<ul>
+							<li class="bright">Wiederholung <span class="light">– Einheit 2</span></li>
+							<li>Box-Styling</li>
+							<li>Layout</li>
+							<li>Positionierung I</li>
+						</ul>
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						Box-Styling <span class="light">– Größe</span>
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	width: 100%;
+	height: 500px;
+	padding: 30px;
+	margin: 50px;
+}</pre>
+</code>
+</div>
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						Box-Styling <span class="light">– Hintergrundfarbe</span>
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	background-color: #FF0000;
+}</pre>
+</code>
+</div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	background-color: rgba(0,0,0,.5);
+}</pre>
+</code>
+</div>
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						Box-Styling <span class="light">– Hintergrundbild</span>
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	background-image: url("../imgs/bg.jpg");
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: cover;
+}</pre>
+</code>
+</div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>repeat, repeat-x, repeat-y, no-repeat</pre>
+</code>
+</div>
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						Box-Styling <span class="light">– Hintergrundbild</span>
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	background-image: url("../imgs/bg.jpg");
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: cover; 
+}</pre>
+</code>
+</div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>left, center, right; top, center, bottom, Größenangaben (50px 10px)</pre>
+</code>
+</div>
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						Box-Styling <span class="light">– Hintergrundbild</span>
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	background-image: url("../imgs/bg.jpg");
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: cover;
+}</pre>
+</code>
+</div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>auto, Größenangaben (50px 10px), cover, contain</pre>
+</code>
+</div>
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						Box-Styling <span class="light">– Transparenz</span>
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	opacity: .5;
+}</pre>
+</code>
+</div>
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						Box-Styling <span class="light">– Schatten</span>
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	box-shadow: 3px 3px 4px 5px #000000; /* Horizontale Position, Vertikale Position, Blur, Size, Farbe */
+}</pre>
+</code>
+</div>
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						Box-Styling <span class="light">– Kontur</span>
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	border-width: 2px;
+	border-style: solid;
+	border-color: hsla(30, 10%, 50%, .6);
+}</pre>
+</code>
+</div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>solid, dashed, dotted</pre>
+</code>
+</div>
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						Box-Styling <span class="light">– Kontur</span>
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	border: 1px solid #000000;
+}</pre>
+</code>
+</div>
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						Box-Styling <span class="light">– Kontur</span>
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	border: 1px solid #000000;
+	border-top-width: 5px;
+	border-bottom: none;
+}</pre>
+</code>
+</div>
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						Box-Styling <span class="light">– Abgerundete Ecken</span>
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	border-radius: 10px;
+}</pre>
+</code>
+</div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	border-radius: 10px 5px 10px 5px;
+}</pre>
+</code>
+</div>
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						Layout <span class="light">– </span> <span class="tag">float</span>
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>img	{
+	float: left;
+}</pre>
+</code>
+</div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>img	{
+	float: right;
+}</pre>
+</code>
+</div>
+					</section>
+				</article>
+				
+				
+				<article>
+					<header>
+						Layout <span class="light">– </span> <span class="tag">clear</span>
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	clear: none;
+}</pre>
+</code>
+</div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	clear: both;
+}</pre>
+</code>
+</div>
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						Layout <span class="light">– </span> <span class="tag">float</span>
+					</header>
+					
+					<section>
+						
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>&lt;main&gt;
+	&lt;article&gt;&hellip;&lt;/article&gt;
+	&lt;aside&gt;&hellip;&lt;/aside&gt;
+&lt;/main&gt;</pre>
+</code>
+</div>
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						Layout <span class="light">– </span> <span class="tag">float</span>
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>article	{
+	width: 60%;
+	float: left;
+}
+
+aside	{
+	width: 40%;
+	float: left;
+}</pre>
+</code>
+</div>
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						Layout <span class="light">– Clearfix</span> 
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+</pre>
+</code>
+</div>
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						Layout <span class="light">– </span> <span class="tag">display</span>
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>img	{
+	display: block;
+}
+</pre>
+</code>
+</div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	display: inline;
+}
+</pre>
+</code>
+</div>
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						Layout <span class="light">– </span> <span class="tag">display</span>
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>nav	{
+	display: none;
+}
+</pre>
+</code>
+</div>
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						Positionierung <span class="light">– </span> <span class="tag">static</span>
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	position: static;
+}
+</pre>
+</code>
+</div>
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						Positionierung <span class="light">– </span> <span class="tag">relative</span>
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	position: relative;
+	top: -40px;
+	right: 25px;
+}
+</pre>
+</code>
+</div>
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						Positionierung <span class="light">– </span> <span class="tag">absolute</span>
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>.container	{
+	position: relative;
+}
+
+.content	{
+	position: absolute;
+	top: -40px;
+	right: 25px;
+}</pre>
+</code>
+</div>
+					</section>
+				</article>
+				
+				
+				<article>
+					<header>
+						Positionierung <span class="light">– </span> <span class="tag">fixed</span>
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>.container	{
+	position: relative;
+}
+
+.content	{
+	position: fixed;
+	top: 40px;
+	left: 25px;
+}</pre>
+</code>
+</div>
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						Positionierung <span class="light">– </span> <span class="tag">z-index</span>
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>.container	{
+	z-index: 999;
+}</pre>
+</code>
+</div>
+					</section>
+				</article>
+
+														
+				<article>
+					<header>
+						Nächste Sitzung
+					</header>
+					
+					<section>
+						<h1>Einheit 4 <span class="light">– 13.05.15</span></h1>
+					</section>
+				</article>
+				
+			<div class="progress">
+				<div class="bar"></div>
+			</div>
+		</main>
+		
+	</body>
+</html>

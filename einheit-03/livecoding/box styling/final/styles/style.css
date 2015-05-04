@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/************************
+*		STRUCTURE		*
+************************/
+
+
+body	{
+}
+
+div	{
+	background-color: rgba(0,0,0,.5);
+	height: 200px;
+	width: 300px;
+	padding: 20px;
+	margin: 30px;
+}
+
+.bg-img-repeat	{
+	color: #FFFFFF;
+	
+	background-image: url(../imgs/bg.jpg);
+	background-size: 100px 100px;
+	background-repeat: repeat-x;
+}
+
+.bg-img-size	{
+	width: 80%;
+	
+	color: #FFFFFF;
+	
+	background-image: url(../imgs/bg.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+
+.opacity	{
+	opacity: .5;
+}
+
+.shadow	{
+	box-shadow: 5px 5px 10px 5px black;
+}
+
+.border	{
+	border: 5px dashed red;
+	border-radius: 10px; 
+}

@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+/************************
+*		STRUCTURE		*
+************************/
+
+
+body	{
+	height: 1400px;
+	padding: 50px;
+}
+
+
+
+div	{
+	background-color: #BBBBBB;
+	border: 1px solid #AAAAAA;
+	height: 200px;
+	width: 300px;
+	padding: 20px;
+
+}
+
+.fixed	{
+	position: fixed;
+	bottom: 40px;
+	right: 100px;
+}
+
+.static	{
+	position: static;
+}
+
+.relative	{
+	position: relative;
+	top: -70px;
+	left: 20px;
+	z-index: -1;
+}
+
+.container	{
+	background-color: #DDDDDD;
+	height: auto;
+	width: auto;
+	
+	position: relative;
+}
+
+.absolute	{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}

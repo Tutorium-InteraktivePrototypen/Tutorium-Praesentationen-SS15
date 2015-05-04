@@ -1,0 +1,15 @@
+img {
+  margin: 20px;
+}
+
+.left  {
+  float: left;
+}
+
+.right  {
+  float: right;
+}
+
+.clear  {
+  clear: both;
+}

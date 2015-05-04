@@ -1,0 +1,16 @@
+img {
+ 	display: block; 
+	margin: 20px;
+}
+
+.left	{
+	float: left;	
+}
+
+.right	{
+	float: right;
+}
+
+.clear	{
+	clear: none;
+}
