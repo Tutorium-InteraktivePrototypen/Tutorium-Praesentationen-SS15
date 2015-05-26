@@ -1,0 +1,700 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+
+		<!-------------------------<!--! META ------------------------------>
+		<title>Einheit 5 – Interaktive Prototypen mit HTML, CSS & JS</title>
+		<link rel="icon" href="imgs/sprites/favicon.ico" type="image/png" />
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+
+		<!-------------------------<!--! STYLES ------------------------------>
+		<link rel="stylesheet" type="text/css" href="../styles/reset.css">
+		<link rel="stylesheet" type="text/css" href="../styles/style.css">
+
+		<!-------------------------<!--! LIBARIES ------------------------------>
+		<script type="text/javascript" src="../scripts/libaries/jquery.js"></script>
+
+		<!-------------------------<!--! SCRIPTS ------------------------------>
+		<script type="text/javascript" src="../scripts/scripts.js"></script>
+		<script type="text/javascript" src="../scripts/linenumbers.js"></script>
+		
+	</head>
+
+	<body>
+		
+		<main>
+			
+			<article>
+				<header>
+					Tutorium <span class="light">– Einheit 5 – 27.05.15</span>
+				</header>
+				
+				<section>
+					<h1>Interaktive Prototypen<br>
+						<span class="light">mit HTML, CSS & JS</span>
+					</h1>
+				</section>
+			</article>
+				
+				<article>
+					<header>
+						<span class="light">Wiederholung:</span> Pseudoklassen <span class="light">– </span> <span class="tag">:hover</span>
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	background-color: #a03331;
+}
+
+div:hover	{
+	background-color: #000000;
+	cursor: pointer;
+}</pre>
+</code>
+</div>
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						<span class="light">Wiederholung:</span> Pseudoklassen <span class="light">– </span> <span class="tag">:hover</span>
+					</header>
+					
+					<section>
+						
+						<style>
+							.hover-div	{
+								width: 100%;
+								height: 600px;
+								background-color: #a03331;
+								border-radius: 20px;
+							}
+							
+							.hover-div:hover	{
+								background-color: black;
+								cursor: pointer;
+							}
+						</style>
+						<div class="hover-div"></div>
+
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						<span class="light">Wiederholung:</span> Pseudoklassen 
+					</header>
+					
+					<section>
+						
+						<ul>
+							<li><span class="tag">:hover</span></li>
+							<li><span class="tag">:first-child</span></li>
+							<li><span class="tag">:last-child</span></li>
+							<li><span class="tag">:nth-child()</span></li>
+						</ul>
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						<span class="light">Wiederholung:</span> Pseudoklassen 
+					</header>
+					
+					<section>
+						
+						<ul>
+							<li><span class="tag">:first-of-type</span></li>
+							<li><span class="tag">:last-of-type</span></li>
+							<li><span class="tag">:nth-of-type()</span></li>
+						</ul>
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						<span class="light">Wiederholung:</span> Positionierung II <span class="light">– </span> <span class="tag">transform</span>
+					</header>
+					
+					<section>
+						
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>transform: translate(x,y);</pre>
+</code>
+</div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>transform: translateX(x);</pre>
+</code>
+</div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>transform: translateY(y);</pre>
+</code>
+</div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>transform: translate3d(x,y,z);</pre>
+</code>
+</div>
+
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						<span class="light">Wiederholung:</span> Positionierung II <span class="light">– </span> <span class="tag">transform</span>
+					</header>
+					
+					<section>
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>transform: scale(wert);</pre>
+</code>
+</div>
+					
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>transform: scale(x,y);</pre>
+</code>
+</div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>transform: scaleX(x);</pre>
+</code>
+</div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>transform: scaleY(y);</pre>
+</code>
+</div>
+
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						<span class="light">Wiederholung:</span> Positionierung II <span class="light">– </span> <span class="tag">transform</span>
+					</header>
+					
+					<section>
+						
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>transform: rotate(winkel);</pre>
+</code>
+</div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>transform: rotate(40deg);</pre>
+</code>
+</div>
+
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						<span class="light">Wiederholung:</span> Positionierung II <span class="light">– </span> <span class="tag">transform</span>
+					</header>
+					
+					<section>
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>transform: translateX(30px) scale(1.2) rotate(40deg);</pre>
+</code>
+</div>
+
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						<span class="light">Wiederholung:</span> Animationen <span class="light">– </span> <span class="tag">transition</span>
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	background-color: #a03331;
+	transition: background-color 1s;
+}
+
+div:hover	{
+	background-color: #000000;
+	cursor: pointer;
+}</pre>
+</code>
+</div>
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						<span class="light">Wiederholung:</span> Animationen <span class="light">– </span> <span class="tag">transition</span>
+					</header>
+					
+					<section>
+						
+						<style>
+							.transition-div	{
+								width: 100%;
+								height: 600px;
+								background-color: #a03331;
+								border-radius: 20px;
+								transition: background-color 1s;
+							}
+							
+							.transition-div:hover	{
+								background-color: black;
+								cursor: pointer;
+							}
+						</style>
+						<div class="transition-div"></div>
+
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						<span class="light">Wiederholung:</span> Animationen <span class="light">– </span> <span class="tag">transition</span>
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>transition: all 1s;</pre>
+</code>
+</div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>transition: color 1s;</pre>
+</code>
+</div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>transition: color 1s, margin-top 2s;</pre>
+</code>
+</div>
+					</section>
+				</article>
+							
+				<article>
+					<header>
+						<span class="light">Wiederholung:</span> Browserspezifische Prefixe
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	transition:width 2s;
+	transform: translateX(20px);
+	
+	-webkit-transition:width 2s;
+	-webkit-transform: translateX(20px);
+	
+	-moz-transition:width 2s;
+	-moz-transform: translateX(20px);
+}</pre>
+</code>
+</div>
+
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						<span class="light">Wiederholung:</span> Browserspezifische Prefixe
+					</header>
+					
+					<section>
+						<ul>
+							<li>Präsentation?</li>
+						</ul>
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						Einheit 5 <span class="light">– Übersicht</span>
+					</header>
+					
+					<section>
+						<ul>
+							<li class="bright">Wiederholung <span class="light">– Einheit 4</span></li>
+							<li>JavaScript</li>
+							<li>jQuery</li>
+						</ul>
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						<span class="light">Einführung</span> JavaScript
+					</header>
+					
+					<section>
+						<ul>
+							<li>Entwickelt 1995</li>
+							<li>Verändern von Websites nachdem sie geladen sind</li>
+							<li>Ergänzung: jQuery (seit 2006)</li>
+						</ul>
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						Einbindung von JavaScript-Dateien
+					</header>
+					
+					<section>
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>&lt;script type=&quot;text/javascript&quot; src=&quot;scripts/scripts.js&quot;&gt;&lt;/script&gt;</pre>
+</code>
+</div>
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						Konsole & Kommentare
+					</header>
+					
+					<section>
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>console.log("test")</pre>
+</code>
+</div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>// Kommentar</pre>
+</code>
+</div>
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						jQuery
+					</header>
+					
+					<section>
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>&lt;script type=&quot;text/javascript&quot; src=&quot;scripts/jquery.js&quot;&gt;&lt;/script&gt;</pre>
+</code>
+</div>
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						Vorgehen
+					</header>
+					
+					<section>
+						<ul>
+							<li>Ausgangszustand definieren (CSS)</li>
+							<li>Aktiv Zustand in gesonderter Klasse definieren (CSS)</li>
+							<li>Bei Interaktion (click) die „aktiv“-Klasse hinzufügen (jQuery)</li>
+						</ul>
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						CSS
+					</header>
+					
+					<section>
+					
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>div	{
+	background-color: red;
+	width: 200px;
+	height: 300px;
+	transition: width .5s;
+}
+
+div.active	{
+	width: 300px;
+}</pre>
+</code>
+</div>
+
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						<span class="light">Grundaufbau</span> jQuery
+					</header>
+					
+					<section>
+					
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>$(selector).action().action(wert);</pre>
+</code>
+</div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>$("main .light").addClass("active");</pre>
+</code>
+</div>
+
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						<span class="light">Grundaufbau</span> jQuery
+					</header>
+					
+					<section>
+					
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>$(document).ready(function()	{
+	// Hier steht unser Code
+});</pre>
+</code>
+</div>
+
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						<span class="light">Grundaufbau</span> jQuery
+					</header>
+					
+					<section>
+					
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>$(document).ready(function()	{
+	$("main .light").addClass("active");
+});</pre>
+</code>
+</div>
+
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						Klassen
+					</header>
+					
+					<section>
+					
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>$("main .light").addClass("active");</pre>
+</code>
+</div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>$("main .light").removeClass("active");</pre>
+</code>
+</div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>$("main .light").toggleClass("active");</pre>
+</code>
+</div>
+
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						MouseEvents
+					</header>
+					
+					<section>
+					
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>$("main .box").click( function()	{
+	$(this).toggleClass("active");
+});</pre>
+</code>
+</div>
+
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						MouseEvents
+					</header>
+					
+					<section>
+					
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>$("main .box").click( function()	{
+	$("nav").toggleClass("active");
+});</pre>
+</code>
+</div>
+
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						MouseEvents
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>$("main .box").click( function()	{
+	$(this).toggleClass("active");
+	$("header h1“).removeClass("rote-ueberschrift");
+});</pre>
+</code>
+</div>
+
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						MouseEvents
+					</header>
+					
+					<section>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>$("main .box").click( function()	{	/* Code */	});</pre>
+</code>
+</div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>$("main .box").dblclick( function()	{	/* Code */	});</pre>
+</code>
+</div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>$("main .box").mouseenter( function()	{	/* Code */	});</pre>
+</code>
+</div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>$("main .box").mouseleave( function()	{	/* Code */	});</pre>
+</code>
+</div>
+
+<div class="code-snippet">
+<div class="lines"></div>
+<code>
+<pre>$("main .box").mousedown( function()	{	/* Code */	});</pre>
+</code>
+</div>
+
+					</section>
+				</article>
+				
+				<article>
+					<header>
+						jQuery
+					</header>
+					
+					<section>
+						<ul>
+							<li>Demo</li>
+							<li>Experimentier-Phase</li>
+						</ul>
+					</section>
+				</article>
+
+				<article>
+					<header>
+						Nächste Sitzung
+					</header>
+					
+					<section>
+						<h1>Einheit 6 <span class="light">– 03.06.15</span></h1>
+					</section>
+				</article>
+				
+			<div class="progress">
+				<div class="bar"></div>
+			</div>
+		</main>
+		
+	</body>
+</html>
